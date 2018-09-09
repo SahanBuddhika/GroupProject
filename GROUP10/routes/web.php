@@ -14,3 +14,12 @@
 Route::get('/', function () {
     return view('welcome');
 });
+Route::get('/', function () {
+    return view('homepage.Loginregister');
+});
+Route::get('/pagestructure', function () {
+    return view('homepage.pagestructure');
+});
+
+
+
