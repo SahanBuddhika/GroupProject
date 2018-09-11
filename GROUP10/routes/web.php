@@ -23,13 +23,19 @@ Route::get('/pagestructure', function () {
 Route::get('/clients', function () {
     return view('clients.clients');
 });
-Route::get('/analyse', function () {
-    return view('analyse.clientbase');
+Route::get('/analyse_clientbase', function () {
+    return view('analyse_clientbase.clientbase');
 });
-Route::get('/analyse', function () {
-    return view('analyse.diseases');
+Route::get('/analyse_diseases', function () {
+    return view('analyse_diseases.diseases');
 });
 
-Route::get('/analyse', function () {
-    return view('analyse.income');
+Route::get('/analyse_income', function () {
+    return view('analyse_income.income');
+});
+Route::get('/appoinments', function () {
+    return view('appoinments.appoinments');
+});
+Route::get('/stock', function () {
+    return view('stock.stock');
 });
