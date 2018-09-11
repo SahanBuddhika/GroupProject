@@ -33,23 +33,23 @@
                 <ul class="list-unstyled components">
                     <p>Contents</p>
                     <li >
-                        <a href="/clients">Clients</a>
+                       <a href="#">Clients</a>
                          
                     </li>
                     <li>
                         
                         <a href="#pageSubmenu" data-toggle="collapse" aria-expanded="false">Analyse</a>
                         <ul class="collapse list-unstyled" id="pageSubmenu">
-                            <li><a href="">Income</a></li>
-                            <li><a href="">ClientBase</a></li>
-                            <li><a href="">Diseases</a></li>
+                            <li><a href="#">Income</a></li>
+                            <li><a href="#">ClientBase</a></li>
+                            <li><a href="#">Diseases</a></li>
                         </ul>
                     </li>
                     <li>
-                        <a href="">Appoinments</a>
+                        <a href="#">Appoinments</a>
                     </li>
                     <li>
-                        <a href="">Stock</a>
+                        <a href="#">Stock</a>
                     </li>
                 </ul>
 
@@ -84,7 +84,7 @@
                     </div>
                 </nav>
 
-                <h2 class="topic">PetRays Animal Clinic</h2>
+                <h2 class="topic">Clients</h2>
                 
 
                 <div class="line"></div>

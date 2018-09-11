@@ -20,6 +20,16 @@ Route::get('/', function () {
 Route::get('/pagestructure', function () {
     return view('homepage.pagestructure');
 });
+Route::get('/clients', function () {
+    return view('clients.clients');
+});
+Route::get('/analyse', function () {
+    return view('analyse.clientbase');
+});
+Route::get('/analyse', function () {
+    return view('analyse.diseases');
+});
 
-
-
+Route::get('/analyse', function () {
+    return view('analyse.income');
+});

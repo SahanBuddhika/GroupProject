@@ -4,8 +4,8 @@
 		Login and Registration Form
 	</title>
     <link rel="stylesheet"  href="/css/style2.css"> <!--link with css file-->
-     <!--    <link rel="stylesheet" href="/css/bootstrap.css"> -->
-     <!--    <script src="js/bootstrap.js"></script> -->
+         <link rel="stylesheet" href="/css/bootstrap.css">
+        <script src="js/bootstrap.js"></script> 
         
 	<body>
 		<div class="login-page">
