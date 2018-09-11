@@ -17,8 +17,14 @@ Route::get('/', function () {
 Route::get('/', function () {
     return view('homepage.Loginregister');
 });
-Route::get('/pagestructure', function () {
+Route::get('/homepage', function () {
     return view('homepage.pagestructure');
+});
+Route::get('/login', function () {
+    return view('login.login');
+});
+Route::get('/register', function () {
+    return view('register.register');
 });
 Route::get('/clients', function () {
     return view('clients.clients');

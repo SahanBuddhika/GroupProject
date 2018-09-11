@@ -33,6 +33,10 @@
                 <ul class="list-unstyled components">
                     <p>Contents</p>
                     <li >
+                        <a href="/homepage">Home</a>
+                         
+                    </li>
+                    <li >
                         <a href="/clients">Clients</a>
                          
                     </li>
@@ -71,8 +75,8 @@
 
                         <div class="a" id="bs-example-navbar-collapse-1">
                             <ul class="nav navbar-nav navbar-center">
-                                <li><a href="#">Page</a></li>
-                                <li><a href="#">Page</a></li>
+                                <li><a href="/login">Login</a></li>
+                                <li><a href="/register">Register</a></li>
                             </ul>
                         </div>
                          <div class = "search">

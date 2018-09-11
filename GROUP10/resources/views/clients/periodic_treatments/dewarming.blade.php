@@ -33,6 +33,10 @@
                 <ul class="list-unstyled components">
                     <p>Contents</p>
                     <li >
+                        <a href="/homepage">Home</a>
+                         
+                    </li>
+                    <li >
                         <a href="/clients">Clients</a>
                          
                     </li>
