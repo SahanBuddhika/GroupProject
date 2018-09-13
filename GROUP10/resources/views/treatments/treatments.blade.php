@@ -88,11 +88,76 @@
                     </div>
                 </nav>
 
-                <h2 class="topic">Periodic Treatments</h2>
+                <h2 class="topic">Treatments</h2>
                 
 
                 <div class="line"></div>
 
+                    
+                <form class="form-horizontal" action="/action_page.php">
+
+                    <div class="form-group">
+                      <label class="control-label col-sm-2" for="date">Date:</label>
+                      <div class="col-sm-6">
+                        <input type="date" class="form-control" id="date" placeholder="Enter Date">
+                      </div>
+                    </div>
+
+                    <div class="form-group">
+                        <label class="control-label col-sm-2" for="note">Note:</label>
+                        <div class="col-sm-6">
+                          <input type="note" class="form-control" id="note" placeholder="Note">
+                        </div>
+                      </div>
+
+                      <div class="line"></div>
+
+                      <div class="form-group">
+                        <label class="control-label col-sm-2" for="med">Name Of Medicine:</label>
+                        <div class="col-sm-6">
+                          <input type="med" class="form-control" id="med" placeholder="Enter Name Of Medicine">
+                        </div>
+                      </div>
+
+                      <div class="form-group">
+                        <label class="control-label col-sm-2" for="qua">Quantity:</label>
+                        <div class="col-sm-6">
+                          <input type="qua" class="form-control" id="qua" placeholder="Enter Quantity">
+                        </div>
+                      </div>
+
+                      <div class="form-group">
+                        <label class="control-label col-sm-2" for="price">Price:</label>
+                        <div class="col-sm-6">
+                          <input type="price" class="form-control" id="price" placeholder="Enter Price">
+                        </div>
+                      </div>
+
+                      <div class="form-group">
+                            <label class="control-label col-sm-2" for="dc">Doctor's Charge:</label>
+                            <div class="col-sm-6">
+                              <input type="dc" class="form-control" id="dc" placeholder="Enter Doctor's Charge ">
+                            </div>
+                          </div>
+
+                          <div class="form-group">
+                                <label class="control-label col-sm-2" for="total">Total:</label>
+                                <div class="col-sm-6">
+                                  <input type="total" class="form-control" id="total" placeholder="Enter Total ">
+                                </div>
+                              </div>
+                        
+    
+                
+
+                    <div class="form-group"> 
+                      <div class="col-sm-offset-7 col-sm-5">
+                        <button type="edit" class="btn btn-default">Print</button>
+                      </div>
+                    </div>
+                    
+                    <div class="line"></div>
+                    <h2 class="topic">Treatment History</h2>
             </div>
         </div>
 

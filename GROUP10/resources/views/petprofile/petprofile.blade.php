@@ -85,15 +85,84 @@
                                             <button class="btn btn-success" type="submit">Search</button>
                                     </form>
                                 </div>
+                             
                     </div>
                 </nav>
 
-                <h2 class="topic">Treatments</h2>
+                <h2 class="topic">Pet Profile</h2>
                 
 
                 <div class="line"></div>
 
+
+                <form class="form-horizontal" action="/action_page.php">
+
+                    <div class="form-group">
+                      <label class="control-label col-sm-2" for="name">Name:</label>
+                      <div class="col-sm-6">
+                        <input type="name" class="form-control" id="name" placeholder="Enter Name">
+                      </div>
+                    </div>
+
+                    <div class="form-group">
+                        <label class="control-label col-sm-2" for="weight">Weight:</label>
+                        <div class="col-sm-6">
+                          <input type="weight" class="form-control" id="weight" placeholder="Enter Weight">
+                        </div>
+                      </div>
+
+                      <div class="form-group">
+                        <label class="control-label col-sm-2" for="age">Age:</label>
+                        <div class="col-sm-6">
+                          <input type="age" class="form-control" id="tp" placeholder="Enter Age">
+                        </div>
+                      </div>
+
+                      <div class="form-group">
+                        <label class="control-label col-sm-2" for="co">Color:</label>
+                        <div class="col-sm-6">
+                          <input type="co" class="form-control" id="co" placeholder="Enter color">
+                        </div>
+                      </div>
+
+                      <div class="form-group">
+                        <label class="control-label col-sm-2" for="specialnote">Special Notes:</label>
+                        <div class="col-sm-6">
+                          <input type="co" class="form-control" id="specialnote" placeholder="Enter Special Notes">
+                        </div>
+                      </div>
+
+                
+
+                    <div class="form-group"> 
+                      <div class="col-sm-offset-7 col-sm-5">
+                        <button type="edit" class="btn btn-default">Edit</button>
+                      </div>
+                    </div>
+
+                    <div class="form-group"> 
+                        <div class="col-sm-offset-7 col-sm-5">
+                          <button type="save" class="btn btn-default">Save</button>
+                        </div>
+                      </div>
+                  </form>
+
+                  <div class = "treatments">
+                        <div class="col-sm-offset-10 col-sm-5">
+                    <form class="form-inline" action="/treatments">
+                        <button class="btn btn-success" type="submit">Treatments</button>
+                    </form>
+                </div>
+                </div>
+                <div class = "periodic_treatments">
+                        <div class="col-sm-offset-10 col-sm-5">
+                    <form class="form-inline" action="/periodic">
+                        <button class="btn btn-success" type="submit">Periodic_Treatments</button>
+                    </form>
+                </div>
+                </div>
             </div>
+            
         </div>
 
 

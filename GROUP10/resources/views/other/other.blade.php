@@ -88,10 +88,74 @@
                     </div>
                 </nav>
 
-                <h2 class="topic">Dewarming Treatments</h2>
+                <h2 class="topic">Other Treatments</h2>
                 
 
                 <div class="line"></div>
+                <div class="container">
+  
+                                         
+                        <div class="dropdown">
+                          <button class="btn btn-primary dropdown-toggle" type="button" data-toggle="dropdown">Periodic_Treatments
+                          <span class="caret"></span></button>
+                          <ul class="dropdown-menu">
+                            <li><a href="/periodic">periodic</a></li>
+                            <li><a href="/dewarming">Dewarming</a></li>
+                            <li><a href="/other">Other</a></li>
+                          </ul>
+                        </div>
+                        <div class="line"></div>
+                        <form class="form-horizontal" action="/action_page.php">
+
+                            <div class="dropdown">
+                                    <button class="btn btn-primary dropdown-toggle" type="button" data-toggle="dropdown">Select Medicine
+                                    <span class="caret"></span></button>
+                                    <ul class="dropdown-menu">
+                                      <li><a href="/periodic">........</a></li>
+                                      <li><a href="/dewarming">.........</a></li>
+                                      <li><a href="/other">........</a></li>
+                                    </ul>
+                                  </div>
+
+                            <div class="form-group">
+                              <label class="control-label col-sm-2" for="quantity">Quantity:</label>
+                              <div class="col-sm-6">
+                                <input type="quantity" class="form-control" id="quantity" placeholder="Enter Quantity">
+                              </div>
+                            </div>
+        
+                            <div class="form-group">
+                                <label class="control-label col-sm-2" for="price">Price:</label>
+                                <div class="col-sm-6">
+                                  <input type="price" class="form-control" id="weight" placeholder="Enter Price">
+                                </div>
+                              </div>
+        
+                              <div class="form-group">
+                                <label class="control-label col-sm-2" for="duration">Duration:</label>
+                                <div class="col-sm-6">
+                                  <input type="duration" class="form-control" id="duration" placeholder="Enter Duration">
+                                </div>
+                              </div>
+        
+                              <div class="form-group">
+                                <label class="control-label col-sm-2" for="note">Note:</label>
+                                <div class="col-sm-6">
+                                  <input type="note" class="form-control" id="note" placeholder="Enter Note">
+                                </div>
+                              </div>
+        
+                        
+        
+                          
+        
+                            <div class="form-group"> 
+                                <div class="col-sm-offset-7 col-sm-5">
+                                  <button type="save" class="btn btn-default">Print</button>
+                                </div>
+                              </div>
+                          </form>
+            </div>
 
             </div>
         </div>

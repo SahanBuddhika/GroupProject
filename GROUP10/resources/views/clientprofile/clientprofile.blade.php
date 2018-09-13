@@ -88,12 +88,52 @@
                     </div>
                 </nav>
 
-                <h2 class="topic">Other Treatments</h2>
-                
+                <h2 class="topic">Client Profile</h2>
 
                 <div class="line"></div>
 
+                
+                <form class="form-horizontal" action="/action_page.php">
+
+                    <div class="form-group">
+                      <label class="control-label col-sm-2" for="name">Name:</label>
+                      <div class="col-sm-6">
+                        <input type="name" class="form-control" id="name" placeholder="Enter Name">
+                      </div>
+                    </div>
+
+                    <div class="form-group">
+                        <label class="control-label col-sm-2" for="address">Address:</label>
+                        <div class="col-sm-6">
+                          <input type="address" class="form-control" id="address" placeholder="Enter Address">
+                        </div>
+                      </div>
+
+                      <div class="form-group">
+                        <label class="control-label col-sm-2" for="tp">Telephone Number:</label>
+                        <div class="col-sm-6">
+                          <input type="tp" class="form-control" id="tp" placeholder="Enter Telephone Number">
+                        </div>
+                      </div>
+
+                      <div class="form-group">
+                        <label class="control-label col-sm-2" for="since">Since:</label>
+                        <div class="col-sm-6">
+                          <input type="since" class="form-control" id="since" placeholder="Since">
+                        </div>
+                      </div>
+
+                
+                      
+
+                  
+                  </form>
+                
             </div>
+
+            
+
+
         </div>
 
 

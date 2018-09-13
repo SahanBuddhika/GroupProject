@@ -92,8 +92,18 @@
                 
 
                 <div class="line"></div>
+                <div class = "treatments">
+                        <div class="col-sm-offset-10 col-sm-5">
+                    <form class="form-inline" action="/clientprofile">
+                        <button class="btn btn-success" type="submit">Client Profile</button>
+                    </form>
+                </div>
+                </div>
 
             </div>
+
+
+            
         </div>
 
 

@@ -29,6 +29,14 @@ Route::get('/register', function () {
 Route::get('/clients', function () {
     return view('clients.clients');
 });
+
+Route::get('/clientprofile', function () {
+    return view('clientprofile.clientprofile');
+});
+
+Route::get('/petprofile', function () {
+    return view('petprofile.petprofile');
+});
 Route::get('/analyse_clientbase', function () {
     return view('analyse_clientbase.clientbase');
 });
@@ -45,3 +53,19 @@ Route::get('/appoinments', function () {
 Route::get('/stock', function () {
     return view('stock.stock');
 });
+Route::get('/dewarming', function () {
+    return view('dewarming.dewarming');
+});
+Route::get('/other', function () {
+    return view('other.other');
+});
+Route::get('/periodic', function () {
+    return view('periodic.periodic');
+});
+Route::get('/treatments', function () {
+    return view('treatments.treatments');
+});
+
+Auth::routes();
+
+Route::get('/home', 'HomeController@index')->name('home');

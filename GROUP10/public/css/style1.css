@@ -44,6 +44,10 @@ a, a:hover, a:focus {
     border-bottom: 1px dashed #ddd;
     margin: 40px 0;
 }
+.line{
+    text-align: center
+}
+
 .search{
     text-align: right;
 }

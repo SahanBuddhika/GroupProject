@@ -92,8 +92,7 @@
                 
 
                 <div class="line"></div>
-
-            </div>
+                
         </div>
 
 
