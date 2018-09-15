@@ -73,12 +73,7 @@
                             </button>
                         </div>
 
-                        <div class="a" id="bs-example-navbar-collapse-1">
-                            <ul class="nav navbar-nav navbar-center">
-                                <li><a href="#">Page</a></li>
-                                <li><a href="#">Page</a></li>
-                            </ul>
-                        </div>
+                        
                          <div class = "search">
                                     <form class="form-inline" action="/action_page.php">
                                         <input class="form-control mr-sm-2" type="text" placeholder="Search">
@@ -92,6 +87,119 @@
                 
 
                 <div class="line"></div>
+                <h2 class="topic">Add New Medicine </h2>
+                
+                <div class="line"></div>
+
+                <form class="form-horizontal" action="/action_page.php">
+
+                    <div class="form-group">
+                      <label class="control-label col-sm-2" for="name">Name:</label>
+                      <div class="col-sm-6">
+                        <input type="name" class="form-control" id="name" placeholder="Enter Medicine Name">
+                      </div>
+                    </div>
+
+                    <div class="form-group">
+                        <label class="control-label col-sm-2" for="quantity">Quantity:</label>
+                        <div class="col-sm-6">
+                          <input type="quantity" class="form-control" id="quantity" placeholder="Enter Quantity">
+                        </div>
+                      </div>
+
+                      <div class="form-group">
+                        <label class="control-label col-sm-2" for="up">Unit Price:</label>
+                        <div class="col-sm-6">
+                          <input type="up" class="form-control" id="up" placeholder="Enter Unit Price">
+                        </div>
+                      </div>
+
+                      <div class="form-group">
+                            <label class="control-label col-sm-2" for="ed">Expire Date:</label>
+                            <div class="col-sm-6">
+                              <input type="ed" class="form-control" id="ed" placeholder="Enter Expire Date">
+                            </div>
+                          </div>
+
+                          <div class="form-group">
+                                <label class="control-label col-sm-2" for="rs">Relevent Species:</label>
+                                <div class="col-sm-6">
+                                  <input type="rs" class="form-control" id="rs" placeholder="Enter Relevent Species">
+                                </div>
+                              </div>
+
+                              <div class="form-group"> 
+                                    <div class="col-sm-offset-7 col-sm-5">
+                                      <button type="save" class="btn btn-default">Add</button>
+                                    </div>
+                                  </div>
+                              
+     
+
+
+                              <h2 class="topic">Add Medicine</h2>
+
+                              <div class="line"></div>
+
+                              <div class="dropdown">
+                                    <button class="btn btn-primary dropdown-toggle" type="button" data-toggle="dropdown">Select Medicines
+                                    <span class="caret"></span></button>
+                                    <ul class="dropdown-menu">
+                                      <li><a href="/periodic">........</a></li>
+                                      <li><a href="/dewarming">.........</a></li>
+                                      <li><a href="/other">........</a></li>
+                                    </ul>
+                                  </div>
+
+
+
+                              
+                    <div class="form-group">
+                            <label class="control-label col-sm-2" for="name">Name:</label>
+                            <div class="col-sm-6">
+                              <input type="name" class="form-control" id="name" placeholder="Enter Medicine Name">
+                            </div>
+                          </div>
+      
+                          <div class="form-group">
+                              <label class="control-label col-sm-2" for="quantity">Quantity:</label>
+                              <div class="col-sm-6">
+                                <input type="quantity" class="form-control" id="quantity" placeholder="Enter Quantity">
+                              </div>
+                            </div>
+      
+                            <div class="form-group">
+                              <label class="control-label col-sm-2" for="up">Unit Price:</label>
+                              <div class="col-sm-6">
+                                <input type="up" class="form-control" id="up" placeholder="Enter Unit Price">
+                              </div>
+                            </div>
+      
+                            <div class="form-group">
+                                  <label class="control-label col-sm-2" for="ed">Expire Date:</label>
+                                  <div class="col-sm-6">
+                                    <input type="ed" class="form-control" id="ed" placeholder="Enter Expire Date">
+                                  </div>
+                                </div>
+
+
+                                <div class="form-group"> 
+                                        <div class="col-sm-offset-7 col-sm-5">
+                                          <button type="save" class="btn btn-default">Add</button>
+                                        </div>
+                                      </div>
+                                  
+         
+
+    
+
+                     
+                
+                      
+
+                  
+                  </form>
+                
 
             </div>
         </div>

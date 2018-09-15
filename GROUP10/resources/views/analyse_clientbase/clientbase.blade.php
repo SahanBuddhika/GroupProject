@@ -74,12 +74,7 @@
                             </button>
                         </div>
 
-                        <div class="a" id="bs-example-navbar-collapse-1">
-                            <ul class="nav navbar-nav navbar-center">
-                                <li><a href="#">Page</a></li>
-                                <li><a href="#">Page</a></li>
-                            </ul>
-                        </div>
+                        
                          <div class = "search">
                                     <form class="form-inline" action="/action_page.php">
                                         <input class="form-control mr-sm-2" type="text" placeholder="Search">

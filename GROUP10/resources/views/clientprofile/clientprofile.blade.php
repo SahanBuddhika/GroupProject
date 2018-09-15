@@ -73,12 +73,7 @@
                             </button>
                         </div>
 
-                        <div class="a" id="bs-example-navbar-collapse-1">
-                            <ul class="nav navbar-nav navbar-center">
-                                <li><a href="#">Page</a></li>
-                                <li><a href="#">Page</a></li>
-                            </ul>
-                        </div>
+                        
                          <div class = "search">
                                     <form class="form-inline" action="/action_page.php">
                                         <input class="form-control mr-sm-2" type="text" placeholder="Search">
@@ -91,6 +86,14 @@
                 <h2 class="topic">Client Profile</h2>
 
                 <div class="line"></div>
+
+                <div class = "treatments">
+                        <div class="col-sm-offset-10 col-sm-5">
+                    <form class="form-inline" action="/petprofile">
+                        <button class="btn btn-success" type="submit">Pet Profile</button>
+                    </form>
+                </div>
+                </div>
 
                 
                 <form class="form-horizontal" action="/action_page.php">
