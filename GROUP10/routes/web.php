@@ -65,6 +65,9 @@ Route::get('/periodic', function () {
 Route::get('/treatments', function () {
     return view('treatments.treatments');
 });
+Route::get('/auth', function () {
+    return view('auth.login');
+});
 
 Auth::routes();
 

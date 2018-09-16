@@ -9,9 +9,14 @@
     <meta name="description" content="">
     <meta name="author" content="">
 
-    <title>SB Admin - Dashboard</title>
-    <script src="js/gulp.js"></script>
+    <title>PETRAYS</title>
+       <link rel="stylesheet" href="/css/bootstrap.css">
+      
+    <!-- <script src="js/gulp.js"></script> -->
     <!-- Bootstrap core CSS-->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
+
+
     <link href="/css/bootstrapcore.css" rel="stylesheet">
 
     <!-- Custom fonts for this template-->
@@ -29,7 +34,7 @@
 
     <nav class="navbar navbar-expand navbar-dark bg-dark static-top">
 
-      <a class="navbar-brand mr-1" href="index.html">PETRAYS</a>
+      <a class="navbar-brand mr-1" href="/homepage">PETRAYS ANIMAL CLINIC</a>
 
       <button class="btn btn-link btn-sm text-white order-1 order-sm-0" id="sidebarToggle" href="#">
         <i class="fas fa-bars"></i>
@@ -49,28 +54,17 @@
 
       <!-- Navbar -->
       <ul class="navbar-nav ml-auto ml-md-0">
-        <li class="nav-item dropdown no-arrow mx-1">
-          <a class="nav-link dropdown-toggle" href="#" id="alertsDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-            <i class="fas fa-bell fa-fw"></i>
-            <span class="badge badge-danger">9+</span>
-          </a>
-          <div class="dropdown-menu dropdown-menu-right" aria-labelledby="alertsDropdown">
-            <a class="dropdown-item" href="#">Action</a>
-            <a class="dropdown-item" href="#">Another action</a>
-            <div class="dropdown-divider"></div>
-            <a class="dropdown-item" href="#">Something else here</a>
-          </div>
-        </li>
+        
         <li class="nav-item dropdown no-arrow mx-1">
           <a class="nav-link dropdown-toggle" href="#" id="messagesDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
             <i class="fas fa-envelope fa-fw"></i>
-            <span class="badge badge-danger">7</span>
+           
           </a>
           <div class="dropdown-menu dropdown-menu-right" aria-labelledby="messagesDropdown">
-            <a class="dropdown-item" href="#">Action</a>
-            <a class="dropdown-item" href="#">Another action</a>
+            <a class="dropdown-item" href="#">Inbox</a>
+            <a class="dropdown-item" href="#">Reply</a>
             <div class="dropdown-divider"></div>
-            <a class="dropdown-item" href="#">Something else here</a>
+            <a class="dropdown-item" href="#">Remove</a>
           </div>
         </li>
         <li class="nav-item dropdown no-arrow">
@@ -78,8 +72,6 @@
             <i class="fas fa-user-circle fa-fw"></i>
           </a>
           <div class="dropdown-menu dropdown-menu-right" aria-labelledby="userDropdown">
-            <a class="dropdown-item" href="#">Settings</a>
-            <a class="dropdown-item" href="#">Activity Log</a>
             <div class="dropdown-divider"></div>
             <a class="dropdown-item" href="#" data-toggle="modal" data-target="#logoutModal">Logout</a>
           </div>
@@ -92,60 +84,40 @@
 
       <!-- Sidebar -->
       <ul class="sidebar navbar-nav">
-        <li class="nav-item active">
-          <a class="nav-link" href="index.html">
-            <i class="fas fa-paw"></i>
-            <span>Dashboard</span>
-          </a>
-        </li>
+       
         <li class="nav-item dropdown">
-          <a class="nav-link dropdown-toggle" href="#" id="pagesDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-            <i class="fas fa-fw fa-folder"></i>
-            <span>Pet Management</span>
-          </a>
-          <div class="dropdown-menu" aria-labelledby="pagesDropdown">
-            <a class="dropdown-item" href="login.html">Add Pet</a>
-            <a class="dropdown-item" href="register.html">Update Pet</a>
-            <a class="dropdown-item" href="forgot-password.html"> Delete Pet</a>
-            <div class="dropdown-divider"></div>
+          <a class="nav-link" href="#" id="pagesDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            <i class="fas fa-fw fa-users"></i>
+            <span>Clients</span>
             
-          </div>
+          </a>
+          
         </li>
 		
         <li class="nav-item dropdown">
           <a class="nav-link dropdown-toggle" href="#" id="pagesDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-            <i class="fa fa-calendar"></i>
-            <span>Appointment Management</span></a>
+            <i class="fas fa-chart-line"></i>
+            <span>Analyse</span></a>
 				 <div class="dropdown-menu" aria-labelledby="pagesDropdown">
-			            <a class="dropdown-item" href="login.html">Add Pet</a>
-			            <a class="dropdown-item" href="register.html">Update Pet</a>
-			            <a class="dropdown-item" href="forgot-password.html"> Delete Pet</a>
+			            <a class="dropdown-item" href="login.html">Income</a>
+			            <a class="dropdown-item" href="register.html">Client Base</a>
+			            <a class="dropdown-item" href="forgot-password.html"> Diseases</a>
 			            <div class="dropdown-divider"></div>
           		</div>
         </li>
 		
         <li class="nav-item dropdown">
-           <a class="nav-link dropdown-toggle" href="#" id="pagesDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-            <i class="fas fa-syringe"></i>
-            <span>Manage Periodic Treatment</span></a>
-			 <div class="dropdown-menu" aria-labelledby="pagesDropdown">
-			            <a class="dropdown-item" href="login.html">Add Pet</a>
-			            <a class="dropdown-item" href="register.html">Update Pet</a>
-			            <a class="dropdown-item" href="forgot-password.html"> Delete Pet</a>
-			            <div class="dropdown-divider"></div>
-          		</div>
+           <a class="nav-link " href="#" id="pagesDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            <i class="far fa-calendar-check"></i>
+            <span>Appoinments</span></a>
+			
         </li>
 		
 		  <li class="nav-item dropdown">
-          <a class="nav-link dropdown-toggle" href="#" id="pagesDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          <a class="nav-link " href="#" id="pagesDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
             <i class="fas fa-user"></i>
-            <span>User Information</span></a>
-				 <div class="dropdown-menu" aria-labelledby="pagesDropdown">
-			            <a class="dropdown-item" href="login.html">Add Pet</a>
-			            <a class="dropdown-item" href="register.html">Update Pet</a>
-			            <a class="dropdown-item" href="forgot-password.html"> Delete Pet</a>
-			            <div class="dropdown-divider"></div>
-          		</div>
+            <span>Stock</span></a>
+				 
         </li>
 		
       </ul>
@@ -156,10 +128,7 @@
 
           <!-- Breadcrumbs-->
           <ol class="breadcrumb">
-            <li class="breadcrumb-item">
-              <a href="#">Dashboard</a>
-            </li>
-            <li class="breadcrumb-item active">Overview</li>
+            <li class="breadcrumb-item active">WELCOME TO PETRAYS ANIMAL CLINIC</li>
           </ol>
 
           <!-- Icon Cards-->
@@ -234,7 +203,7 @@
           <div class="card mb-3">
             <div class="card-header">
               <i class="fas fa-chart-area"></i>
-              Area Chart Example</div>
+              Analyse Income</div>
             <div class="card-body">
               <canvas id="myAreaChart" width="100%" height="30"></canvas>
             </div>
@@ -769,13 +738,14 @@
           <div class="modal-body">Select "Logout" below if you are ready to end your current session.</div>
           <div class="modal-footer">
             <button class="btn btn-secondary" type="button" data-dismiss="modal">Cancel</button>
-            <a class="btn btn-primary" href="login.html">Logout</a>
+            <a class="btn btn-primary" href="/login">Logout</a>
           </div>
         </div>
       </div>
     </div>
 
     <!-- Bootstrap core JavaScript-->
+    <script src="js/bootstrap.js"></script> 
     <script src="js/botstrapcore.js"></script>
     <script src="js/botstrapcore2.js"></script>
     

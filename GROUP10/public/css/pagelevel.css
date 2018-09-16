@@ -20,6 +20,10 @@ table.dataTable.nowrap td {
   white-space: nowrap;
 }
 
+.breadcrumb-item active{
+   text-align: center;
+}
+
 div.dataTables_wrapper div.dataTables_length label {
   font-weight: normal;
   text-align: left;
