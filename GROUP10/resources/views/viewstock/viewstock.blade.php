@@ -131,7 +131,6 @@
 				 
         </li>
 		
-		
       </ul>
 
       <div id="content-wrapper">
@@ -140,10 +139,86 @@
 
           <!-- Breadcrumbs-->
           <ol class="breadcrumb">
-            <li class="breadcrumb-item active">Appoinments</li>
+            <li class="breadcrumb-item active">VIEW STOCK</li>
           </ol>
 
-           
+         
+
+            
+            <!-- DataTables Example -->
+          <div class="card mb-3">
+            <div class="card-header">
+              <i class="fas fa-table"></i>
+              Stock Table</div>
+            <div class="card-body">
+              <div class="table-responsive">
+                <table class="table table-bordered" id="dataTable" width="100%" cellspacing="0">
+                  <thead>
+                    <tr>
+                      <td>Name</td>
+                      <td>Quantity</td>
+                      <td>Brand</td>
+                      <td>Price</td>
+                      <td>Expire Date</td>
+                    </tr>
+                  </thead>
+                  <tfoot>
+                    <tr>
+                      <td>Name</td>
+                      <td>Quantity</td>
+                      <td>Brand</td>
+                      <td>Price</td>
+                      <td>Expire Date</td>
+                    </tr>
+                  </tfoot>
+                  <tbody>
+                    <tr>
+                      <td></td>
+                      <td></td>
+                      <td></td>
+                      <td></td>
+                      <td></td>
+                    </tr>
+                    <tr>
+                      <td></td>
+                      <td></td>
+                      <td></td>
+                      <td></td>
+                      <td></td>  
+                    </tr>
+                    <tr>
+                      <td></td>
+                      <td></td>
+                      <td></td>
+                      <td></td>
+                      <td></td>  
+                    </tr>
+                    <tr>
+                      <td></td>
+                      <td></td>
+                      <td></td>
+                      <td></td>
+                      <td></td>  
+                    </tr>
+                    <tr>
+                      <td></td>
+                      <td></td>
+                      <td></td>
+                      <td></td>
+                      <td></td>  
+                    </tr>
+
+                    
+                  </tbody>
+                </table>
+              </div>
+            </div>
+            <div class="card-footer small text-muted"></div>
+          </div>
+
+        </div>
+        <!-- /.container-fluid -->
+
         <!-- Sticky Footer -->
         <footer class="sticky-footer">
           <div class="container my-auto">

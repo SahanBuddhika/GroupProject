@@ -68,6 +68,15 @@ Route::get('/treatments', function () {
 Route::get('/auth', function () {
     return view('auth.login');
 });
+Route::get('/addstock', function () {
+    return view('addstock.addstock');
+});
+Route::get('/updatestock', function () {
+    return view('updatestock.updatestock');
+});
+Route::get('/viewstock', function () {
+    return view('viewstock.viewstock');
+});
 
 Auth::routes();
 

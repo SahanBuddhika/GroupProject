@@ -85,12 +85,14 @@
       <!-- Sidebar -->
       <ul class="sidebar navbar-nav">
        
-        <li class="nav-item dropdown">
-          <a class="nav-link" href="#" id="pagesDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+       <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" id="pagesDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
             <i class="fas fa-fw fa-users"></i>
-            <span>Clients</span>
-            
-          </a>
+            <span>Clients</span></a>
+             <div class="dropdown-menu" aria-labelledby="pagesDropdown">
+			            <a class="dropdown-item" href="/clients">Clients</a>
+			            <div class="dropdown-divider"></div>
+          		</div>
           
         </li>
 		
@@ -99,24 +101,33 @@
             <i class="fas fa-chart-line"></i>
             <span>Analyse</span></a>
 				 <div class="dropdown-menu" aria-labelledby="pagesDropdown">
-			            <a class="dropdown-item" href="login.html">Income</a>
-			            <a class="dropdown-item" href="register.html">Client Base</a>
-			            <a class="dropdown-item" href="forgot-password.html"> Diseases</a>
+			            <a class="dropdown-item" href="/analyse_income">Income</a>
+			            <a class="dropdown-item" href="/analyse_clientbase">Client Base</a>
+			            <a class="dropdown-item" href="/analyse_diseases"> Diseases</a>
 			            <div class="dropdown-divider"></div>
           		</div>
         </li>
 		
         <li class="nav-item dropdown">
-           <a class="nav-link " href="#" id="pagesDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+           <a class="nav-link dropdown-toggle" href="#" id="pagesDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
             <i class="far fa-calendar-check"></i>
             <span>Appoinments</span></a>
-			
+                        <div class="dropdown-menu" aria-labelledby="pagesDropdown">
+			            <a class="dropdown-item" href="/appoinments">Appoinments</a>
+			            <div class="dropdown-divider"></div>
+          		</div>
         </li>
 		
 		  <li class="nav-item dropdown">
-          <a class="nav-link " href="#" id="pagesDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          <a class="nav-link dropdown-toggle" href="#" id="pagesDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
             <i class="fas fa-user"></i>
             <span>Stock</span></a>
+            <div class="dropdown-menu" aria-labelledby="pagesDropdown">
+			            <a class="dropdown-item" href="/addstock">Add Stock</a>
+			            <a class="dropdown-item" href="/viewstock">View Stock</a>
+                        <a class="dropdown-item" href="/updatestock">Update Stock</a>
+			            <div class="dropdown-divider"></div>
+          		</div>
 				 
         </li>
 		
@@ -228,6 +239,10 @@
             </div>
             <div class="card-footer small text-muted"></div>
           </div>
+
+          <a href="/clientprofile">
+                    <button  type="button" class="btn btn-success btn-block" >Client Profile</button>
+         </a>
 
         </div>
         <!-- /.container-fluid -->
