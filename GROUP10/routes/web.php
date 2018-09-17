@@ -11,9 +11,9 @@
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
-});
+// Route::get('/', function () {
+//     return view('welcome');
+// });
 Route::get('/', function () {
     return view('homepage.Loginregister');
 });
@@ -81,3 +81,7 @@ Route::get('/viewstock', function () {
 Auth::routes();
 
 Route::get('/home', 'HomeController@index')->name('home');
+
+
+//This Route Will be Provide Pet Routes
+Route::resource('pet','PostController');
