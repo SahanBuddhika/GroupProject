@@ -144,11 +144,11 @@
          
           <div class="container">
     
-    @if(count($posts)>0)
+    @if(count($pet)>0)
 
         <ul class="list-goup">
         <h1>Clients</h1>
-        @foreach($posts as $post)
+        @foreach($pet as $post)
             <h2>
             <li class="list-group-item"><a href="/posts/{{$post->id}}">{{$post->ename}}</a> <h2>
             <small>{{$post->mobile}}</small>
@@ -256,9 +256,6 @@
             <div class="card-footer small text-muted"></div>
           </div> -->
 
-          <a href="/clientprofile">
-                    <button  type="button" class="btn btn-success btn-block" >Client Profile</button>
-         </a>
 
         </div>
         <!-- /.container-fluid -->

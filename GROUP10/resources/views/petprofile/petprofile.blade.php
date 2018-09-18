@@ -143,21 +143,31 @@
             <li class="breadcrumb-item active">PET PROFILE</li>
           </ol>
          
-           
+          <div class="container">
+      <div class="py-5 text-center">
+            <!-- add the href to get image -->
+            <img class="rounded-circle" src="data:image/gif;base64,R0lGODlhAQABAIAAAHd3dwAAACH5BAAAAAAALAAAAAABAAEAAAICRAEAOw==" alt="Generic placeholder image" width="140" height="140">
+            <h2 >Rox </h2>
+            <p>Species:Dog</p>
+            
+          </div><!-- /.col-lg-4 -->
+    
          
         
 
       <div class="card mb-3">
-                <div class="card-header">
+
+
+                 <div class="card-header">
                     <div class="card-body">
                     <form class="form-horizontal" action="/action_page.php">
 
-                   <i class="far fa-user-circle" style="font-size:100px " ></i>
+                   <!-- <i class="far fa-user-circle" style="font-size:100px " ></i> -->
 
 
-                    <div class="card mb-3">
+                     <div class="card mb-3">
                     <div class="card-header">
-                    <div class="card-body">
+                    <div class="card-body">  
                    <div class="form-group">
                         <label for="disabledInput" class="col-sm-2 control-label">Name</label>
                         <div class="col-sm-10">
@@ -195,15 +205,10 @@
                    <div class="form-group">
                         <label for="disabledInput" class="col-sm-2 control-label">Special Notes</label>
                         <div class="col-sm-10">
-                            <input class="form-control" id="disabledInput" type="text" placeholder="" disabled>
+                            <input class="form-control" id="disabledInput" type="input" placeholder="" disabled>
+                            
                         </div>
-                    </div>
-
-                    </div>
-                    </div>
-                    </div>
-                   </div>
-                 <div class="form-group"> 
+                        <div class="form-group"> 
                       <div class="col-sm-offset-7 col-sm-5">
                         <button type="edit" class="btn btn-default">Edit</button>
                       </div>
@@ -213,6 +218,13 @@
                         <button type="edit" class="btn btn-default">Save</button>
                       </div>
                     </div>
+                    </div>
+
+                    </div>
+                    </div>
+                    </div>
+                   </div>
+                 
                     
                   </form>
 

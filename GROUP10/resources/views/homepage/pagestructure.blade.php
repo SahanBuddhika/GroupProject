@@ -31,6 +31,7 @@
   </head>
 
   <body id="page-top">
+  
 
     <nav class="navbar navbar-expand navbar-dark bg-dark static-top">
 
@@ -142,19 +143,45 @@
           <ol class="breadcrumb">
             <li class="breadcrumb-item active">WELCOME TO PETRAYS ANIMAL CLINIC</li>
           </ol>
+       
+         <div class="card-group">
+  <div class="card">
+    
+    <div class="card-body">
+      <h5 class="card-title">Event Calander</h5>
+      <p class="card-text"></p>
+      <p class="card-text"><small class="text-muted"></small></p>
+    </div>
+  </div>
+  <div class="card">
+    
+    <div class="card-body">
+      <h5 class="card-title">Income</h5>
+      <p class="card-text"></p>
+      <p class="card-text"><small class="text-muted"></small></p>
+    </div>
+  </div>
+  <div class="card">
+    
+    <div class="card-body">
+      <h5 class="card-title">Client Base</h5>
+      <p class="card-text">
+      
 
-         
-          <!-- Area Chart Example-->
-          <div class="card mb-3">
-            <div class="card-header">
-              <i class="fas fa-chart-area"></i>
-              Analyse Income</div>
-            <div class="card-body">
-              <canvas id="myAreaChart" width="100%" height="30"></canvas>
-            </div>
-           
-          </div>
 
+      
+      
+      </p>
+      <p class="card-text"><small class="text-muted"></small></p>
+    </div>
+  </div>
+</div>
+
+   <div class="container">
+        <div class="py-5 text-center">
+         <img src="\image\finallogo.png">
+        </div>
+        </div>
       
 
         <!-- Sticky Footer -->

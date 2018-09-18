@@ -239,10 +239,8 @@
       <div class="py-5 text-center">
             <!-- add the href to get image -->
             <img class="rounded-circle" src="data:image/gif;base64,R0lGODlhAQABAIAAAHd3dwAAACH5BAAAAAAALAAAAAABAAEAAAICRAEAOw==" alt="Generic placeholder image" width="140" height="140">
-            <h2 >Sunimali Rathnayake </h2>
-            <p>0713172413</p>
-            <p>Matara</p>
-            <p>sunimali@gmail.com</p>
+            <h2 >Sahan Buddhika </h2>
+            <p>071445587</p>
             
           </div><!-- /.col-lg-4 -->
 
@@ -333,14 +331,14 @@
                         <div class="col-sm-10">
                             <input class="form-control" id="disabledInput" type="text" placeholder="" disabled>
                         </div>
-                    </div> -->
+                    </div>
 
                     
                   </form>
 
                     </div>
                 </div>
-            </div>
+            </div> -->
 
               <div class="card mb-3">
                             <div class="card-header">
@@ -360,7 +358,7 @@
             <img class="rounded-circle" src="data:image/gif;base64,R0lGODlhAQABAIAAAHd3dwAAACH5BAAAAAAALAAAAAABAAEAAAICRAEAOw==" alt="Generic placeholder image" width="140" height="140">
             <h2>Rox</h2>
             <p>Species:Dog</p>
-            <p><a class="btn btn-secondary" href="/petprofile" role="button">View details &raquo;</a></p>
+            <p><a class="btn btn-secondary" href="#" role="button">View details &raquo;</a></p>
           </div><!-- /.col-lg-4 -->
           <div class="col-lg-4">
             <img class="rounded-circle" src="data:image/gif;base64,R0lGODlhAQABAIAAAHd3dwAAACH5BAAAAAAALAAAAAABAAEAAAICRAEAOw==" alt="Generic placeholder image" width="140" height="140">
@@ -383,7 +381,7 @@
                     </div>
                 </div>
                   <a href="/petprofile">
-                    <!-- <button  type="button" class="btn btn-success btn-block" >Pet Profile</button> -->
+                    <button  type="button" class="btn btn-success btn-block" >Pet Profile</button>
                 </a>
           
             </div>

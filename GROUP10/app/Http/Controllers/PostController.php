@@ -14,8 +14,8 @@ class PostController extends Controller
      */
     public function index()
     {
-        $posts=PostData::all();
-        return view('pet.index')->with('posts',$posts);
+        $pet=PostData::all();
+        return view('pet.index')->with('pet',$pet);
     }
 
     /**
@@ -47,7 +47,8 @@ class PostController extends Controller
      */
     public function show($id)
     {
-        //
+        $post= PostData::find($id);
+        return view('posts.show/{$id}')->with('post',$post);
     }
 
     /**

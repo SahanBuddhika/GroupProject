@@ -15,7 +15,7 @@
 //     return view('welcome');
 // });
 Route::get('/', function () {
-    return view('homepage.Loginregister');
+    return view('auth.login');
 });
 Route::get('/homepage', function () {
     return view('homepage.pagestructure');
@@ -26,11 +26,11 @@ Route::get('/login', function () {
 Route::get('/register', function () {
     return view('register.register');
 });
-Route::get('/clients', function () {
-    return view('clients.clients');
-});
+// Route::get('/clients', function () {
+//     return view('pet.index');
+// });
 
-Route::get('/clientprofile', function () {
+Route::get('/posts/1', function () {
     return view('clientprofile.clientprofile');
 });
 
@@ -79,6 +79,8 @@ Route::get('/viewstock', function () {
 });
 
 Auth::routes();
+
+Route::get('/clients', 'PostController@index');
 
 Route::get('/home', 'HomeController@index')->name('home');
 

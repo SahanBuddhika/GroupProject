@@ -125,7 +125,7 @@
             <div class="dropdown-menu" aria-labelledby="pagesDropdown">
 			            <a class="dropdown-item" href="/addstock">Add Stock</a>
 			            <a class="dropdown-item" href="/viewstock">View Stock</a>
-                        <a class="dropdown-item" href="/updatestock">Update Stock</a>
+                       
 			            <div class="dropdown-divider"></div>
           		</div>
 				 
@@ -162,15 +162,7 @@
                       <td>Expire Date</td>
                     </tr>
                   </thead>
-                  <tfoot>
-                    <tr>
-                      <td>Name</td>
-                      <td>Quantity</td>
-                      <td>Brand</td>
-                      <td>Price</td>
-                      <td>Expire Date</td>
-                    </tr>
-                  </tfoot>
+                  
                   <tbody>
                     <tr>
                       <td></td>
