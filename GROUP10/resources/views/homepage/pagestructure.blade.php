@@ -87,12 +87,12 @@
       <ul class="sidebar navbar-nav">
        
        <li class="nav-item dropdown">
-          <a class="nav-link dropdown-toggle" href="#" id="pagesDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          <a class="nav-link dropdown-toggle" href="/clients" id="pagesDropdown" role="button" >
             <i class="fas fa-fw fa-users"></i>
-            <span>Clients</span></a>
+            Clients</a>
              <div class="dropdown-menu" aria-labelledby="pagesDropdown">
-			            <a class="dropdown-item" href="/clients">Clients</a>
-			            <div class="dropdown-divider"></div>
+			            
+			            
           		</div>
           
         </li>
@@ -110,26 +110,16 @@
         </li>
 		
         <li class="nav-item dropdown">
-           <a class="nav-link dropdown-toggle" href="#" id="pagesDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+           <a class="nav-link dropdown-toggle" href="#" id="pagesDropdown" role="button" >
             <i class="far fa-calendar-check"></i>
             <span>Appoinments</span></a>
-                        <div class="dropdown-menu" aria-labelledby="pagesDropdown">
-			            <a class="dropdown-item" href="/appoinments">Appoinments</a>
-			            <div class="dropdown-divider"></div>
-          		</div>
         </li>
 		
 		  <li class="nav-item dropdown">
-          <a class="nav-link dropdown-toggle" href="#" id="pagesDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-            <i class="fas fa-user"></i>
+          <a class="nav-link dropdown-toggle" href="#" id="pagesDropdown" role="button" >
+            <i class="fa fa-bars"></i>
             <span>Stock</span></a>
-            <div class="dropdown-menu" aria-labelledby="pagesDropdown">
-			            <a class="dropdown-item" href="/addstock">Add Stock</a>
-			            <a class="dropdown-item" href="/viewstock">View Stock</a>
-                        <a class="dropdown-item" href="/updatestock">Update Stock</a>
-			            <div class="dropdown-divider"></div>
-          		</div>
-				 
+            
         </li>
 		
 		
@@ -141,7 +131,8 @@
 
           <!-- Breadcrumbs-->
           <ol class="breadcrumb">
-            <li class="breadcrumb-item active">WELCOME TO PETRAYS ANIMAL CLINIC</li>
+            <li class="breadcrumb-item active">WELCOME TO PETRAYS ANIMAL CLINIC <p> {{Carbon\Carbon::now()}}</p></li>
+           
           </ol>
        
          <div class="card-group">
