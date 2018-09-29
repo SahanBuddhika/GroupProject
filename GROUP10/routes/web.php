@@ -80,10 +80,21 @@ Route::get('/viewstock', function () {
 
 Auth::routes();
 
-Route::get('/clients', 'PostController@index');
+Route::get('/client/{id}', 'PostToClientList@show');
 
 Route::get('/home', 'HomeController@index')->name('home');
 
 
+Route::get('/clients', 'PostToClientList@index');
+
+
 //This Route Will be Provide Pet Routes
 Route::resource('pet','PostController');
+
+Route::get('/layout', function () {
+    return view('layout');
+});
+
+Route::get('/in', function () {
+    return view('pet.in');
+});

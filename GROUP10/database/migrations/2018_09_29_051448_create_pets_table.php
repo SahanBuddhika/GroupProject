@@ -4,7 +4,7 @@ use Illuminate\Support\Facades\Schema;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Database\Migrations\Migration;
 
-class CreatePostDatasTable extends Migration
+class CreatePetsTable extends Migration
 {
     /**
      * Run the migrations.
@@ -13,13 +13,16 @@ class CreatePostDatasTable extends Migration
      */
     public function up()
     {
-        Schema::create('post_datas', function (Blueprint $table) {
+        Schema::create('pets', function (Blueprint $table) {
             $table->increments('id');
-            $table->string('ename');
-            $table->string('mobile');
-            $table->string('mail');
-            $table->mediumText('Discription');
+            $table->binary('petimage') ;
             $table->timestamps();
+            $table->string('species');
+            $table->string('colour');
+            $table->string('age');
+
+
+
         });
     }
 
@@ -30,6 +33,6 @@ class CreatePostDatasTable extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('post_datas');
+        Schema::dropIfExists('pets');
     }
 }

@@ -31,7 +31,6 @@
   </head>
 
   <body id="page-top">
-  
 
     <nav class="navbar navbar-expand navbar-dark bg-dark static-top">
 
@@ -74,7 +73,7 @@
           </a>
           <div class="dropdown-menu dropdown-menu-right" aria-labelledby="userDropdown">
             <div class="dropdown-divider"></div>
-            <a class="dropdown-item" href="#" data-toggle="modal" data-target="#logoutModal">Logout</a>
+            <a class="dropdown-item" href="/login" data-toggle="modal" data-target="#logoutModal">Logout</a>
           </div>
         </li>
       </ul>
@@ -87,12 +86,12 @@
       <ul class="sidebar navbar-nav">
        
        <li class="nav-item dropdown">
-          <a class="nav-link dropdown-toggle" href="/clients" id="pagesDropdown" role="button" >
+          <a class="nav-link dropdown-toggle" href="#" id="pagesDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
             <i class="fas fa-fw fa-users"></i>
-            Clients</a>
+            <span>Clients</span></a>
              <div class="dropdown-menu" aria-labelledby="pagesDropdown">
-			            
-			            
+			            <a class="dropdown-item" href="/clients">Clients</a>
+			            <div class="dropdown-divider"></div>
           		</div>
           
         </li>
@@ -110,18 +109,27 @@
         </li>
 		
         <li class="nav-item dropdown">
-           <a class="nav-link dropdown-toggle" href="#" id="pagesDropdown" role="button" >
+           <a class="nav-link dropdown-toggle" href="#" id="pagesDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
             <i class="far fa-calendar-check"></i>
             <span>Appoinments</span></a>
+                        <div class="dropdown-menu" aria-labelledby="pagesDropdown">
+			            <a class="dropdown-item" href="/appoinments">Appoinments</a>
+			            <div class="dropdown-divider"></div>
+          		</div>
         </li>
 		
 		  <li class="nav-item dropdown">
-          <a class="nav-link dropdown-toggle" href="#" id="pagesDropdown" role="button" >
-            <i class="fa fa-bars"></i>
+          <a class="nav-link dropdown-toggle" href="#" id="pagesDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            <i class="fas fa-user"></i>
             <span>Stock</span></a>
-            
+            <div class="dropdown-menu" aria-labelledby="pagesDropdown">
+			            <a class="dropdown-item" href="/addstock">Add Stock</a>
+			            <a class="dropdown-item" href="/viewstock">View Stock</a>
+                        <a class="dropdown-item" href="/updatestock">Update Stock</a>
+			            <div class="dropdown-divider"></div>
+          		</div>
+				 
         </li>
-		
 		
       </ul>
 
@@ -131,55 +139,132 @@
 
           <!-- Breadcrumbs-->
           <ol class="breadcrumb">
-            <li class="breadcrumb-item active">WELCOME TO PETRAYS ANIMAL CLINIC <p> {{Carbon\Carbon::now()}}</p></li>
-           
+            <li class="breadcrumb-item active">CLIENTS</li>
           </ol>
-       
-         <div class="card-group">
-  <div class="card">
+         
+          <div class="container">
     
-    <div class="card-body">
-      <h5 class="card-title">Event Calander</h5>
-      <p class="card-text"></p>
-      <p class="card-text"><small class="text-muted"></small></p>
-    </div>
-  </div>
-  <div class="card">
-    
-    <div class="card-body">
-      <h5 class="card-title">Income</h5>
-      <p class="card-text"></p>
-      <p class="card-text"><small class="text-muted"></small></p>
-    </div>
-  </div>
-  <div class="card">
-    
-    <div class="card-body">
-      <h5 class="card-title">Client Base</h5>
-      <p class="card-text">
-      
+    @if(count($pet)>0)
 
+        <ul class="list-goup">
+        <h1>Clients</h1>
+        @foreach($pet as $post)
+            <h2>
+            <li class="list-group-item"><a href="/posts/{{$post->id}}">{{$post->ename}}</a> <h2>
+            <small>{{$post->mobile}}</small>
+            </li>
+        @endforeach
+        </ul>
 
-      
-      
-      </p>
-      <p class="card-text"><small class="text-muted"></small></p>
-    </div>
-  </div>
+    @endif
 </div>
+           
+          <!-- DataTables Example -->
+          <!-- <div class="card mb-3">
+            <div class="card-header">
+              <i class="fas fa-table"></i>
+              Client Table</div>
+            <div class="card-body">
+              <div class="table-responsive">
+                <table class="table table-bordered" id="dataTable" width="100%" cellspacing="0">
+                  <thead>
+                    <tr>
+                      <td>No</td>
+                      <td>Name</td>
+                      <td>Telephone Number</td>
+                    </tr>
+                  </thead>
+                  <tfoot>
+                    <tr>
+                      <td>No</td>
+                      <td>Name</td>
+                      <td>Telephone Number</td>
+                    </tr>
+                  </tfoot>
+                  <tbody>
+                    <tr>
+                      <td></td>
+                      <td></td>
+                      <td></td>
+                    </tr>
+                    <tr>
+                      <td></td>
+                      <td></td>
+                      <td></td> 
+                    </tr>
+                    <tr>
+                      <td></td>
+                      <td></td>
+                      <td></td> 
+                    </tr>
+                    <tr>
+                     <td></td>
+                     <td></td>
+                      <td></td>
+                    </tr>
+                    <tr>
+                      <td></td>
+                      <td></td>
+                      <td></td>
+                    </tr>
+                     <tr>
+                      <td></td>
+                      <td></td>
+                      <td></td>
+                    </tr>
+                     <tr>
+                      <td></td>
+                      <td></td>
+                      <td></td>
+                    </tr>
+                     <tr>
+                      <td></td>
+                      <td></td>
+                      <td></td>
+                    </tr>
+                     <tr>
+                      <td></td>
+                      <td></td>
+                      <td></td>
+                    </tr>
+                     <tr>
+                      <td></td>
+                      <td></td>
+                      <td></td>
+                    </tr>
+                     <tr>
+                      <td></td>
+                      <td></td>
+                      <td></td>
+                    </tr>
+                     <tr>
+                      <td></td>
+                      <td></td>
+                      <td></td>
+                    </tr>
+                     <tr>
+                      <td></td>
+                      <td></td>
+                      <td></td>
+                    </tr>
 
-   <div class="container">
-        <div class="py-5 text-center">
-         <img src="\image\finallogo.png">
+                    
+                  </tbody>
+                </table>
+              </div>
+            </div>
+            <div class="card-footer small text-muted"></div>
+          </div> -->
+
+
         </div>
-        </div>
-      
+        <!-- /.container-fluid -->
 
         <!-- Sticky Footer -->
         <footer class="sticky-footer">
           <div class="container my-auto">
             <div class="copyright text-center my-auto">
-              <span></span>
+             
             </div>
           </div>
         </footer>
@@ -195,7 +280,7 @@
       <i class="fas fa-angle-up"></i>
     </a>
 
-    <!-- Logout Window-->
+    <!-- Logout Modal-->
     <div class="modal fade" id="logoutModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
       <div class="modal-dialog" role="document">
         <div class="modal-content">
