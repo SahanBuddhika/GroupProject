@@ -9,7 +9,7 @@
         <h1>Clients</h1>
         @foreach($pet as $post)
             <h2>
-            <li class="list-group-item"><a href="/pet/{{$post->id}}">{{$post->ename}}</a> <h2>
+            <li class="list-group-item"><a href="/client/{{$post->id}}">{{$post->ename}}</a> <h2>
             <small>{{$post->mobile}}</small>
             </li>
         @endforeach

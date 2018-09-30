@@ -26,17 +26,15 @@ Route::get('/login', function () {
 Route::get('/register', function () {
     return view('register.register');
 });
-// Route::get('/clients', function () {
-//     return view('pet.index');
-// });
+ Route::get('/edit', function () {
+     return view('petprofile.create');
+ });
 
-Route::get('/posts/1', function () {
-    return view('clientprofile.clientprofile');
-});
 
-Route::get('/petprofile', function () {
-    return view('petprofile.petprofile');
-});
+//this link is being worked properly
+Route::get('/petprofile/{id}', 'PostToPets@show');
+
+
 Route::get('/analyse_clientbase', function () {
     return view('analyse_clientbase.clientbase');
 });
@@ -80,11 +78,22 @@ Route::get('/viewstock', function () {
 
 Auth::routes();
 
+//Working properly route get according to client id
 Route::get('/client/{id}', 'PostToClientList@show');
+
+
+
+
+//This is test route
+Route::get('/show', function () {
+    return view('pet.show');
+});
+
 
 Route::get('/home', 'HomeController@index')->name('home');
 
 
+//route  working properly 
 Route::get('/clients', 'PostToClientList@index');
 
 
