@@ -17,6 +17,10 @@ class PostToPets extends Controller
         
     }
 
+    public function craete(){
+        view ('petprofile.create');
+    }
+
 
   
 
