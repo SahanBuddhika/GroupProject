@@ -17,8 +17,21 @@ class PostToPets extends Controller
         
     }
 
-    public function craete(){
-        view ('petprofile.create');
+    public function create(){
+      
+        return view('petprofile.create');
+    }
+
+    public function store(Request $request){
+      $post =new Pets;
+      $post->colour=$request->input('title');
+      $post->species=$request->input('specialNote');
+      $post->save();
+
+      $pet=Pets::all();
+      return view('petprofile.create')->with('pet',$pet);
+    
+        
     }
 
 

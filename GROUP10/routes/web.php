@@ -81,6 +81,10 @@ Auth::routes();
 //Working properly route get according to client id
 Route::get('/client/{id}', 'PostToClientList@show');
 
+Route::get('/create', 'PostToPets@create');
+
+Route::post('/create', 'PostToPets@store');
+
 
 
 
