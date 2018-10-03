@@ -10,7 +10,7 @@
 
 <div class="form-group">
     {{Form::label('specialNote','Special Discription about pet')}}
-    {{Form::textarea('specialNote','',['class'=>'form-control','placeholder'=>'Note-Down Here '])}}
+    {{Form::textarea('specialNote','',['id'=>'article-ckeditor','class'=>'form-control','placeholder'=>'Note-Down Here '])}}
 </div>
 
  
