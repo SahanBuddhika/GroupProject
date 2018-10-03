@@ -18,8 +18,9 @@ class PostToPets extends Controller
     }
 
     public function create(){
-      
-        return view('petprofile.create');
+        
+        $pet=Pets::all();
+        return view('petprofile.create')->with('pet',$pet);
     }
 
     public function store(Request $request){
@@ -29,7 +30,7 @@ class PostToPets extends Controller
       $post->save();
 
       $pet=Pets::all();
-      return view('petprofile.create')->with('pet',$pet);
+      return redirect('/create');
     
         
     }
