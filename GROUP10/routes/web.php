@@ -45,6 +45,9 @@ Route::get('/analyse_diseases', function () {
 Route::get('/analyse_income', function () {
     return view('analyse_income.income');
 });
+Route::get('/clientprofile', function () {
+    return view('clientprofile.clientprofile');
+});
 Route::get('/appoinments', function () {
     return view('appoinments.appoinments');
 });

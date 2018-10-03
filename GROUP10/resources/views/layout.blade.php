@@ -33,7 +33,7 @@
   <body id="page-top">
   
 
-    <nav class="navbar navbar-expand navbar-dark bg-dark static-top">
+    <nav class="navbar navbar-expand navbar-dark bg-dark fixed-top">
 
       <a class="navbar-brand mr-1" href="/homepage">PETRAYS ANIMAL CLINIC</a>
 
@@ -84,67 +84,67 @@
     <div id="wrapper">
 
       <!-- Sidebar -->
-      <ul class="sidebar navbar-nav">
-       
-       <li class="nav-item dropdown">
-          <a class="nav-link dropdown-toggle" href="/clients" id="pagesDropdown" role="button" >
-            <i class="fas fa-fw fa-users"></i>
-            Clients</a>
-             <div class="dropdown-menu" aria-labelledby="pagesDropdown">
-			            
-			            
-          		</div>
-          
-        </li>
-		
+      <div class="pt-5">
+        <ul class="sidebar navbar-nav pt-5"></ul>
+        <ul class="sidebar navbar-nav pt-5 fixed-top">
+        
         <li class="nav-item dropdown">
-          <a class="nav-link dropdown-toggle" href="#" id="pagesDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-            <i class="fas fa-chart-line"></i>
-            <span>Analyse</span></a>
-				 <div class="dropdown-menu" aria-labelledby="pagesDropdown">
-			            <a class="dropdown-item" href="/analyse_income">Income</a>
-			            <a class="dropdown-item" href="/analyse_clientbase">Client Base</a>
-			            <a class="dropdown-item" href="/analyse_diseases"> Diseases</a>
-			            <div class="dropdown-divider"></div>
-          		</div>
-        </li>
-		
-        <li class="nav-item dropdown">
-           <a class="nav-link dropdown-toggle" href="#" id="pagesDropdown" role="button" >
-            <i class="far fa-calendar-check"></i>
-            <span>Appoinments</span></a>
-        </li>
-		
-		  <li class="nav-item dropdown">
-          <a class="nav-link dropdown-toggle" href="#" id="pagesDropdown" role="button" >
-            <i class="fa fa-bars"></i>
-            <span>Stock</span></a>
+            <a class="nav-link dropdown-toggle" href="/clients" id="pagesDropdown" role="button" >
+                <i class="fas fa-fw fa-users"></i>
+                Clients</a>
+                <div class="dropdown-menu" aria-labelledby="pagesDropdown">
+                            
+                            
+                    </div>
             
-        </li>
-		
-		
-      </ul>
+            </li>
+            
+            <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="pagesDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                <i class="fas fa-chart-line"></i>
+                <span>Analyse</span></a>
+                    <div class="dropdown-menu" aria-labelledby="pagesDropdown">
+                            <a class="dropdown-item" href="/analyse_income">Income</a>
+                            <a class="dropdown-item" href="/analyse_clientbase">Client Base</a>
+                            <a class="dropdown-item" href="/analyse_diseases"> Diseases</a>
+                            <div class="dropdown-divider"></div>
+                    </div>
+            </li>
+            
+            <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="pagesDropdown" role="button" >
+                <i class="far fa-calendar-check"></i>
+                <span>Appoinments</span></a>
+            </li>
+            
+                <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="pagesDropdown" role="button" >
+                <i class="fa fa-bars"></i>
+                <span>Stock</span></a>
+                
+            </li>
+            
+            
+        </ul>
+        </div>
+        <div id="content-wrapper">
 
-      <div id="content-wrapper">
+            <div class="container-fluid">
 
-        <div class="container-fluid">
-
-          <!-- Breadcrumbs-->
-          
-       
-         @yield('content')
-
-        <!-- Sticky Footer -->
-        <footer class="sticky-footer">
-          <div class="container my-auto">
-            <div class="copyright text-center my-auto">
-              <span></span>
+            <!-- Breadcrumbs-->
+           
+            @yield('content')
+            
+            <!-- Sticky Footer -->
+            <footer class="sticky-footer">
+            <div class="container my-auto">
+                <div class="copyright text-center my-auto">
+                <span></span>
+                </div>
             </div>
-          </div>
-        </footer>
-
-      </div>
-      <!-- /.content-wrapper -->
+            </footer>
+        </div>
+            <!-- /.content-wrapper -->
 
     </div>
     <!-- /#wrapper -->
@@ -197,3 +197,11 @@
   </body>
 
 </html>
+
+
+
+
+
+
+
+
