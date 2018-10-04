@@ -9,6 +9,9 @@
 
 
 body{
-    background-color: grey;
-}
+    background-image:url('/image/sahan.jpg'); 
+     /* background-position: fixed; */
+     background-size: auto;
+     background-size: 1370px 670px;
+    }
 

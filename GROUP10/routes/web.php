@@ -84,16 +84,14 @@ Auth::routes();
 //Working properly route get according to client id
 Route::get('/client/{id}', 'PostToClientList@show');
 
-Route::get('/create', 'PostToPets@create');
 
-Route::post('/create', 'PostToPets@store');
 
 
 
 
 //This is test route
-Route::get('/show', function () {
-    return view('pet.show');
+Route::get('/test', function () {
+    return view('test');
 });
 
 
@@ -114,3 +112,7 @@ Route::get('/layout', function () {
 Route::get('/in', function () {
     return view('pet.in');
 });
+
+Route::get('/create', 'PostToPets@create');
+
+Route::post('/create', 'PostToPets@store');
