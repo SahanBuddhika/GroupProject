@@ -1,17 +1,41 @@
 @extends('layout')
 
+
+
+
  @section('content')
 
 {!! Form::open(['action' => 'PostToPets@store','method'=>'POST']) !!}
+
+
+ 
+
 <div class="form-group">
     {{Form::label('title','Title')}}
     {{Form::text('title','',['class'=>'form-control','placeholder'=>'Title'])}}
 </div>
 
+
 <div class="form-group">
     {{Form::label('specialNote','Special Discription about pet')}}
-    {{Form::textarea('specialNote','',['id'=>'article-ckeditor','class'=>'form-control','placeholder'=>'Note-Down Here '])}}
+    {{Form::textarea('specialNote','',['class'=>'form-control','placeholder'=>'Note-Down Here '])}}
 </div>
+
+
+<div class="form-group">
+<div class="row">
+    <div class="col-lg-9">
+ {{Form::select('size', ['L' => 'Large', 'S' => 'Small'], null, ['placeholder' => 'Select The Medicine','class'=>'form-control'])}}
+ </div>
+ <div class="col-lg-2">
+ {{Form::text('quantity','',['class'=>'form-control','placeholder'=>'Quantity'])}}
+ </div>
+ <div class="col-lg-1">
+ {{Form::submit('Add+',['class'=>'btn btn-success'])}}
+ </div>
+ </div>
+ </div>
+
 
  
 {{Form::submit('Save',['class'=>'btn btn-primary'])}}
@@ -20,7 +44,10 @@
 
 @if(count($pet)>0)
 
-<ul class="list-goup">
+<br>
+<br>
+<br>
+
 <h1>Recently Added</h1>
 @foreach($pet as $post)
 
@@ -29,6 +56,7 @@
               <strong class="text-gray-dark">{{$post->colour}}</strong>
               <small>{{$post->created_at}}</small>
             </div>
+</div>
 <hr>
     <small>{{$post->species}}</small>
 

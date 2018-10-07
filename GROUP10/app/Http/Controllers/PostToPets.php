@@ -12,6 +12,7 @@ class PostToPets extends Controller
     {
        
         $pets= Pets::find($id);
+        
         return view('petprofile.petprofile1')->with('pets',$pets);
 
         
@@ -19,8 +20,14 @@ class PostToPets extends Controller
 
     public function create(){
         
+        // $medicineList=DB::table('medicines')
+        //                 ->groupBy('country')
+        //                 ->get();
+        $man=5;
         $pet=Pets::all();
-        return view('petprofile.create')->with('pet',$pet);
+
+        
+        return view('petprofile.create',['pet'=>$pet,'man'=>$man]);
     }
 
     public function store(Request $request){
@@ -29,7 +36,7 @@ class PostToPets extends Controller
       $post->species=$request->input('specialNote');
       $post->save();
 
-      $pet=Pets::all();
+      
       return redirect('/create');
     
         

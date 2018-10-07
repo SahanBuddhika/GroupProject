@@ -11,4 +11,6 @@
             <p>{{$post->mail}}</p>
             <p>{{$post->mobile}}</p>
           </div>
+
+          
 @endsection('content')
