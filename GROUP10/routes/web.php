@@ -85,8 +85,8 @@ Auth::routes();
 Route::get('/client/{id}', 'PostToClientList@show');
 
 
-
-
+//this is add stock route
+Route::get('/insert', 'Controller@insert');
 
 
 //This is test route
