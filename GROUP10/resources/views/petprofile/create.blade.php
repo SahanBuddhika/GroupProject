@@ -9,6 +9,15 @@
 
 
  
+ <div class="container">
+      <div class="py-5 text-center">
+            <!-- add the href to get image -->
+            <img class="rounded-circle" src="data:image/gif;base64,R0lGODlhAQABAIAAAHd3dwAAACH5BAAAAAAALAAAAAABAAEAAAICRAEAOw==" alt="Generic placeholder image" width="140" height="140">
+            <h2 >Rox </h2>
+            <p>Species:Dog</p>
+            
+          </div>
+          </div>
 
 <div class="form-group">
     {{Form::label('title','Title')}}
@@ -22,10 +31,21 @@
 </div>
 
 
+
 <div class="form-group">
 <div class="row">
     <div class="col-lg-9">
- {{Form::select('size', ['L' => 'Large', 'S' => 'Small'], null, ['placeholder' => 'Select The Medicine','class'=>'form-control'])}}
+    <div class="input-group mb-3">
+  <div class="input-group-prepend">
+    <label class="input-group-text" for="inputGroupSelect01">Select Medicine</label>
+  </div>
+  <select class="custom-select" id="inputGroupSelect01">
+    @foreach($medicine as $med)
+    <option value="1">{{$med->name}}</option>
+    @endforeach
+
+  </select>
+</div>
  </div>
  <div class="col-lg-2">
  {{Form::text('quantity','',['class'=>'form-control','placeholder'=>'Quantity'])}}
@@ -42,13 +62,15 @@
     
 {!! Form::close() !!} 
 
-@if(count($pet)>0)
+
 
 <br>
 <br>
 <br>
 
 <h1>Recently Added</h1>
+
+@if(count($pet)>0)
 @foreach($pet as $post)
 
 <div class="my-3 p-3 bg-white rounded box-shadow">
@@ -57,8 +79,11 @@
               <small>{{$post->created_at}}</small>
             </div>
 </div>
-<hr>
+
     <small>{{$post->species}}</small>
+<hr>
+<hr>
+    
 
 @endforeach
 </ul>

@@ -19,7 +19,8 @@ class PostToClientList extends Controller
     {
        
         $post= Clients::find($id);
-        returna ('pet.shw')->with('post',$post);
+        $pets=Pets::all();
+        return view('pet.shw',['post'=>$post,'pets'=>$pets]);
 
         
     }

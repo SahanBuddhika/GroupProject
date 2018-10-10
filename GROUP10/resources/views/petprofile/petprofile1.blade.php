@@ -5,6 +5,16 @@
 
 
           {!! Form::open(['action' => 'PostToPets@store','method'=>'POST']) !!}
+
+          <div class="container">
+      <div class="py-5 text-center">
+            <!-- add the href to get image -->
+            <img class="rounded-circle" src="data:image/gif;base64,R0lGODlhAQABAIAAAHd3dwAAACH5BAAAAAAALAAAAAABAAEAAAICRAEAOw==" alt="Generic placeholder image" width="140" height="140">
+            <h2 >Rox </h2>
+            <p>Species:Dog</p>
+            
+          </div>
+          </div>
 <div class="form-group">
     {{Form::label('title','Title')}}
     {{Form::text('title','',['class'=>'form-control','placeholder'=>'Title'])}}

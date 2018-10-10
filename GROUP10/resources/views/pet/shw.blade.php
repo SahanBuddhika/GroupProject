@@ -12,5 +12,18 @@
             <p>{{$post->mobile}}</p>
           </div>
 
+ @if(count($pets)>0)
+
+<ul class="list-goup">
+<h1>Clients</h1>
+@foreach($pets as $post)
+    <h2>
+    <li class="list-group-item"><a href="/client/{{$post->id}}">{{$pets->id}}</a> <h2>
+    <small>{{$post->mobile}}</small>
+    </li>
+@endforeach
+</ul>
+
+@endif
           
 @endsection('content')
