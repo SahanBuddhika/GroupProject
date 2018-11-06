@@ -4,7 +4,7 @@ use Illuminate\Support\Facades\Schema;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Database\Migrations\Migration;
 
-class CreatePetnoticesTable extends Migration
+class CreatePetlistsTable extends Migration
 {
     /**
      * Run the migrations.
@@ -13,14 +13,16 @@ class CreatePetnoticesTable extends Migration
      */
     public function up()
     {
-        Schema::create('petnotices', function (Blueprint $table) {
+        Schema::create('petlists', function (Blueprint $table) {
+            $table->increments('pid');
             $table->integer('id');
-            $table->string('title');
-            $table->string('note');
+            $table->string('age');
+            $table->string('pname');
+            $table->string('specialNote');
+            $table->string('colour');
+            
             $table->timestamps();
         });
-
-        //foriegn key will be both id and timestamp
     }
 
     /**
@@ -30,6 +32,6 @@ class CreatePetnoticesTable extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('petnotices');
+        Schema::dropIfExists('petlists');
     }
 }

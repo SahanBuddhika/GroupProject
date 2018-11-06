@@ -85,6 +85,10 @@ Auth::routes();
 Route::get('/client/{id}', 'PostToClientList@show');
 
 
+//Working properly route get according to client id
+Route::get('/client/{id}/{pid}', 'PostToPets@create');
+
+
 //this is add stock route
 Route::get('/insert', 'Controller@insert');
 
@@ -102,7 +106,7 @@ Route::get('/home', 'HomeController@index')->name('home');
 Route::get('/clients', 'PostToClientList@index');
 
 
-//This Route Will be Provide Pet Routes
+//This Route Will be Provided Pet Routes
 Route::resource('pet','PostController');
 
 Route::get('/layout', function () {
@@ -116,3 +120,9 @@ Route::get('/in', function () {
 Route::get('/create', 'PostToPets@create');
 
 Route::post('/create', 'PostToPets@store');
+
+
+Route::get('/create1', 'PostToPets1@create');
+
+Route::post('/create1', 'PostToPets1@store');
+

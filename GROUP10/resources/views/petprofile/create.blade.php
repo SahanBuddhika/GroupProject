@@ -31,7 +31,6 @@
 </div>
 
 
-
 <div class="form-group">
 <div class="row">
     <div class="col-lg-9">
@@ -39,28 +38,42 @@
   <div class="input-group-prepend">
     <label class="input-group-text" for="inputGroupSelect01">Select Medicine</label>
   </div>
+
   <select class="custom-select" id="inputGroupSelect01">
     @foreach($medicine as $med)
-    <option value="1">{{$med->name}}</option>
+    <option value={{$med->id}}>{{$med->name}}</option>
     @endforeach
 
   </select>
 </div>
+
  </div>
  <div class="col-lg-2">
  {{Form::text('quantity','',['class'=>'form-control','placeholder'=>'Quantity'])}}
  </div>
  <div class="col-lg-1">
- {{Form::submit('Add+',['class'=>'btn btn-success'])}}
+ {{Form::submit('Add+',['class'=>'btn btn-success','name'=>'add','value'=>'add'])}}
  </div>
  </div>
  </div>
 
 
  
-{{Form::submit('Save',['class'=>'btn btn-primary'])}}
+{{Form::submit('Save',['class'=>'btn btn-primary','name'=>'save','value'=>'save'])}}
+
+
     
 {!! Form::close() !!} 
+
+
+
+
+
+
+
+
+
+
 
 
 

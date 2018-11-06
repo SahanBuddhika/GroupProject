@@ -4,7 +4,7 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 use App\Clients;
-use App\Pets;
+use App\petlist;
 
 class PostToClientList extends Controller
 {
@@ -18,9 +18,20 @@ class PostToClientList extends Controller
     public function show($id)
     {
        
-        $post= Clients::find($id);
-        $pets=Pets::all();
-        return view('pet.shw',['post'=>$post,'pets'=>$pets]);
+        $post=Clients::find($id);
+        return view('pet.shw',['post'=>$post,'pets'=>$post->pets]);
+        //return view('pet.shw')->with('post',$post->id);
+        
+
+
+        // $post=Clients::find($id);
+        // //$pets=petlist::find($id);
+
+        // return view('pet.shw',['post'=>$post,'pets'=>$post->pets]);
+
+        //return view('pet.shw',['post'=>$post,'pets'=>$pets]);
+        //return view('pet.shw',[$post,$pets]);
+       // return view('pet.shw',['post'=>$post,'pets'=>$pets]);
 
         
     }
