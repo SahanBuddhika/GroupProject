@@ -87,6 +87,7 @@ Route::get('/client/{id}', 'PostToClientList@show');
 
 //Working properly route get according to client id
 Route::get('/client/{id}/{pid}', 'PostToPets@create');
+Route::get('/client/{id}/{pid}/periodic', 'PostToPets@create1');
 
 
 //this is add stock route
@@ -125,4 +126,8 @@ Route::post('/create', 'PostToPets@store');
 Route::get('/create1', 'PostToPets1@create');
 
 Route::post('/create1', 'PostToPets1@store');
+
+Route::get('/test55', function () {
+    return view('test55');
+});
 

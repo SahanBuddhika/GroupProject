@@ -93,6 +93,19 @@ class PostToPets extends Controller
 // }
 
 
+public function create1(){
+        
+    // $medicineList=DB::table('medicines')
+    //                 ->groupBy('country')
+    //                 ->get();
+    $man=5;
+    $pet=Pets::all();
+    $medicine=Medicine::all();
+    
+
+    
+    return view('petprofile.periodic',['pet'=>$pet,'man'=>$man,'medicine'=>$medicine]);
   
 
+}
 }

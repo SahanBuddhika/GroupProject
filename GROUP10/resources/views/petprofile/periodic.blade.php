@@ -12,10 +12,10 @@
  <div class="card-header">
     <ul class="nav nav-pills card-header-pills">
       <li class="nav-item">
-        <a class="nav-link active" href="/client/{id}/{pid}">Genaral-Treatments</a>
+        <a class="nav-link" href="/client/{id}/{pid}">Genaral-Treatments</a>
       </li>
       <li class="nav-item">
-        <a class="nav-link" href="/client/{id}/{pid}/periodic">Periodic-Treatments</a>
+        <a class="nav-link  active" href="/client/{id}/{pid}/periodic">Periodic-Treatments</a>
       </li>
       
     </ul>
