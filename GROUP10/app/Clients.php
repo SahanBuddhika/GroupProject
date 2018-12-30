@@ -8,7 +8,7 @@ class Clients extends Model
 {
     //
 
-    public function pets(){
+    public function pet(){
         return $this->hasMany('App\petlist');
     }
 }
